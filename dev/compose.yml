@@ -2,13 +2,14 @@ services:
   hofmeister-dev:
     image: hofmeister:dev
     privileged: true
-    container_name: hofmeister-dev 
+    container_name: hofmeister-dev
     network_mode: host
     environment:
       - DISPLAY=${DISPLAY}
       - OPENAI_API_KEY=${OPENAI_API_KEY}
+    working_dir: /opt/hofmeister
     volumes:
-      - ~/repos/hofmeister.dev:/opt/hofmeister.dev
+      - ~/repos/hofmeister.dev:/opt/hofmeister
       - ~/.gitconfig:/home/dev/.gitconfig
       - ~/.ssh:/home/dev/.ssh
       - ~/.config/gcloud:/home/dev/.config/gcloud

@@ -39,14 +39,14 @@
 		<!-- https://developer.mozilla.org/en-US/docs/Web/SVG/Element/text -->
 		<svg class="container mx-auto w-full" viewBox="0 0 1750 280" xmlns="http://www.w3.org/2000/svg">
 			<text
-				font-size={310}
+				font-size={275}
 				x="50%"
 				y="50%"
 				dominant-baseline="central"
 				text-anchor="middle"
 				class="fill-token uppercase font-bold"
 			>
-				Spaceman
+				HOFMEISTER
 			</text>
 		</svg>
 	</header>
